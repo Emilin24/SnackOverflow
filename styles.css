@@ -1,0 +1,108 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffef7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #ffde59;
+  padding: 1em;
+  border-bottom: 4px dashed #ffa31a;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.section {
+  margin: 2em auto;
+  padding: 1.5em;
+  border: 2px dotted #ffa31a;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  background: #fff9e6;
+}
+
+.biscuit-dip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.biscuit {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
+.rainbow-circle {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1em;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background-image: conic-gradient(
+    red, orange, yellow, green, cyan, blue, violet, red
+  );
+  animation: spin 4s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.tea-cup {
+  width: 100px;
+  margin: 10px;
+}
+
+button {
+  background: #ffa31a;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ff8800;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #666;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Added for fake error message box */
+.error-box {
+  background-color: #ffe6e6;
+  border: 2px dashed red;
+  color: #a30000;
+  padding: 10px;
+  margin-top: 1em;
+  font-weight: bold;
+  white-space: pre-line;
+}
